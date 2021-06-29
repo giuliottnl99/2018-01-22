@@ -13,6 +13,7 @@ public class Match {
 	private int fthg; // full time home goals
 	private int ftag; // full time away goals
 	private String ftr; // full time result (H, A, D)
+	public double punti=0;
 	// E' possibile aggiungere altri campi, se risulteranno necessari
 
 	/**
@@ -28,6 +29,10 @@ public class Match {
 	 * @param ftag
 	 * @param ftr
 	 */
+	public Match(int id, int s, String HomeTeam, String AwayTeam) {
+		
+	}
+	
 	public Match(int id, Season season, String div, LocalDate date, Team homeTeam, Team awayTeam, int fthg, int ftag, String ftr) {
 		super();
 		this.id = id;
@@ -40,6 +45,7 @@ public class Match {
 		this.ftag = ftag;
 		this.ftr = ftr;
 	}
+	
 
 	/**
 	 * @return the id
